@@ -1,0 +1,25 @@
+
+public class SelectionSort {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void selection_sort() {
+		
+	}
+	
+	public static void print_array(int[] s) {
+		for(int n: s){
+			System.out.print(n+" ");
+		}
+		System.out.println();
+	}
+	
+	public static void swap(int[] s, int a, int b) {
+		int t = s[a];
+		s[a] = s[b];
+		s[b] = t;
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		Scanner scann =  new Scanner(System.in);
+		Random rand = new Random();
+		int array[] = new int[scann.nextInt()];
+		int k = scann.nextInt();
+		for(int i=0; i<array.length; i++) {
+			array[i] = rand.nextInt(100);
+		}
+	}
+
+	public static int find(int s, int e) {
+		while()
+		
+		return -1;
+	}
+}

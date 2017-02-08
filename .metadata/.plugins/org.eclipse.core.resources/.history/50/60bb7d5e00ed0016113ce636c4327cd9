@@ -1,0 +1,14 @@
+
+public class Max {
+	public static int array[];
+	public static int ans;
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void solve() {
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Problem4 {
+	public static int array[];
+	public static int find;
+	public static void main(String[] args) {
+		// lower bound
+		// n개로 이루어진 정수 집합에서 원하는 수 k 이상인 수가 처음으로 등장하는 위치를 찾으시오.
+		// 단, 입력되는 집합은 오름차순으로 정렬되어 있으며, 같은 수가 여러 개 존재할 수 있다.
+		Scanner scann = new Scanner(System.in);
+		array = new int scann[scann.nextInt()+1];
+		
+	}
+
+	public static int solve(int s, int e) {
+		while(e-s>=0) {
+			int m = (s+e)/2;
+			if(array[m] < find)
+				s = m+1;
+			if(array[m] < find) s=m+1;
+			else e=m-1;
+		}
+		return e+1;
+	}
+}
