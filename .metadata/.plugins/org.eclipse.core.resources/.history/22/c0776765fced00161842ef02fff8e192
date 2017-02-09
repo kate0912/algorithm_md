@@ -1,0 +1,55 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Problem1 {
+	public static int array[][];
+	public static int result[];
+	public static int n;
+	public static int cnt;
+	public static int index = 1;
+	public static void main(String[] args) {
+		Scanner scann = new Scanner(System.in);
+		n = scann.nextInt();
+		array = new int[n][n];
+		result = new int[n];
+		for(int i=0; i<n; i++)
+			for(int j=0; j<n; j++)
+				array[i][j] = scann.nextInt();
+		
+		solve();
+		//printResult();
+	}
+	
+	public static void solve() {
+		for(int i=0; i<array.length; i++)
+			for(int j=0; j<array[i].length; j++) {
+				if(array[i][j]==1) {
+					cnt++; 
+					move(i, j, ++index);
+					result[index] = cnt; 
+					cnt = 0;
+				}
+			}
+		System.out.println(index-1);
+	}
+	
+	public static void move(int x, int y, int index) {
+		array[x][y] = index;
+		if(valid(x+1, y) && array[x+1][y]==1) {cnt++; move(x+1, y, index);}
+		if(valid(x-1, y) && array[x-1][y]==1) {cnt++; move(x-1, y, index);}
+		if(valid(x, y+1) && array[x][y+1]==1) {cnt++; move(x, y+1, index);}
+		if(valid(x, y-1) && array[x][y-1]==1) {cnt++; move(x, y-1, index);}
+	}
+	
+	public static boolean valid(int x, int y) {
+		return (0<=x && x<n) && (0<=y && y<n);
+	}
+	
+	public static void printResult() {
+		Arrays.sort(result);
+		for(int n : result) {
+			System.out.println(n);
+		}
+	}
+
+}

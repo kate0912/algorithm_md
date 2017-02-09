@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Problem2 {
 
 	public static void main(String[] args) {
-		// 3ÀÇ ¹è¼ö °ÔÀÓ
+		// 3ì˜ ë°°ìˆ˜ ê²Œì„
 		Scanner scann = new Scanner(System.in);
 		int n = scann.nextInt();
 		for(int i = 1; i<=n; i++) {

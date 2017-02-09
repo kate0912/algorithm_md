@@ -17,7 +17,7 @@ public class SelectionSort {
 		selection_sort(s);
 		//Arrays.sort(s);
 		print_array(s);
-		System.out.println("½ÇÇà ½Ã°£: "+(System.currentTimeMillis()-start)/1000.0f);
+		System.out.println("ì‹¤í–‰ ì‹œê°„: "+(System.currentTimeMillis()-start)/1000.0f);
 
 	}
 

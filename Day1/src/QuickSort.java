@@ -17,7 +17,7 @@ public class QuickSort {
 		quick_sort(array, 0, array.length-1);
 		//Arrays.sort(array);
 		print_array(array);
-		System.out.println("½ÇÇà ½Ã°£: "+(System.currentTimeMillis()-start)/1000.0f);
+		System.out.println("ì‹¤í–‰ ì‹œê°„: "+(System.currentTimeMillis()-start)/1000.0f);
 
 	}
 
